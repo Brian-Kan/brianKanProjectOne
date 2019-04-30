@@ -481,7 +481,11 @@ form button {
 @media (max-width: 1350px) {
     .footerContactNavGrp {
         float: none;
+        width: 100%;
+        padding: 0 10rem;
     }
+
+    
 }
 
 @media (max-width: 1185px) {
