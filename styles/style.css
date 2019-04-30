@@ -1,0 +1,526 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*================================================================================*/
+/*GLOBAL SETTINGS*/
+/* ============================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #0b0101;
+    font-family: 'kanit', 'arial', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 125%;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.wrapper {
+    /*This max-width was approved by Fatima.  This all based on the Zepline design stating that the default portal width to be 1600px.*/
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+}
+
+.subtitle {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    font-family: 'kanit', 'arial', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-align: left;
+}
+
+article {
+    font-family: 'roboto', 'arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.45rem;
+    font-style: normal;
+}
+
+.btnStyle {
+    font-family: 'kanit', 'arial', sans-serif;
+    font-style: italic;
+	padding: .85rem .775rem;
+	font-size: 1rem;	
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #E40015;
+    border: none;
+    display: inline-block;
+}
+
+/* ================================================================================================ */
+/* HEADER */
+/* ================================================================================================ */
+header {
+    background-image: url(../images/image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.logo p {
+    color: #fff;
+    text-transform: uppercase;    
+    font-size: 1.275rem;
+}
+
+.logo {
+    float: left;
+}
+
+.logo,
+.headerNav {
+    margin: 2rem 0;
+}
+
+.headerMain {
+    height: 65vh;
+    position: relative;
+}
+
+h1 {
+    color: #cc1d36;
+    font-size: 5.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: .5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.h1Span1,
+.h1Span2 {
+    line-height: 4.85rem;
+}
+
+.h1Span2,
+.h1Span3 {
+    display: block;
+}
+
+.h1Span3 {
+    font-family: 'lato', 'arial', sans-serif;
+    color: #fcfbfb;
+    font-size: 1.55rem;
+    line-height: 1.58rem;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+/* ================================================================================================ */
+/* NAVIGATIONS */
+/* ================================================================================================ */
+
+/* ------------------ */
+/* NAV HEADER */
+/* ------------------ */
+.headerNav {
+    float:right;
+}
+
+.hamburger {
+    display: none;
+}
+
+.headerNavLi {
+    display: inline-block;
+    margin: 0rem 2rem;
+}
+
+.headerNavLi a {
+    color: #fcfbfb;
+    font-size: .9rem;
+    font-family:'catamaran', 'arial', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* ------------------ */
+/* NAV SOCIAL ICONS */
+/* ------------------ */
+.headerSocIcn {
+    position: absolute;
+    bottom: -7rem;
+    right: -2rem;
+}
+
+.headerSocIcn li {
+    margin-bottom: 1rem;
+}
+
+.headerSocIcn a {
+    color: #fff;
+}
+
+/* ------------------ */
+/* NAV FOOTER */
+/* ------------------ */
+.footerSectionRight {
+    float: right;
+    text-align: right;
+}
+
+.footerNavUl a {
+    color: #fcfbfb;
+    text-transform: uppercase; 
+    font-size: 1rem;
+    line-height: 1.45rem;
+}
+
+/* ================================================================================================ */
+/* NEWS ARTICLES - GALLERY */
+/* ================================================================================================ */
+.newsTitle {
+    text-align: center;
+    margin: 4.65rem;
+}
+
+.newsArtDiv {
+    float: left;
+    width: calc((100% / 3) - 1.4rem); /* was 2.1rem */    
+}
+
+.newsArtDiv:nth-of-type(2) {
+    margin: 0 2.1rem;
+}
+
+/* ================================================================================================ */
+/* NEWS ARTICLES - HIGHLIGHTS */
+/* ================================================================================================ */
+.newsHighImgDiv,
+.newHiArt {
+    float: left;
+    margin: 1rem 0rem;
+}
+
+.newsHighImgDiv {    
+    width: calc(100% - 75%);
+}
+
+.newHiArt {
+    width: calc((100% - 25%) - 2.1rem);
+    margin-left: 2.1rem;    
+}
+
+.newsHigh {
+    position: relative;
+}
+
+.btnLinkHighlights {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 19rem;
+    display: inline-block;
+}
+
+.articleBody {
+    font-size: 1rem;
+    font-family: 'roboto', 'arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.45rem;
+}
+
+/* ================================================================================================ */
+/* 4 QUADRANT ARTICLE SECTION */
+/* ================================================================================================ */
+
+/* ------------------ */
+/* TOP */
+/* ------------------ */
+.fourQuadArtTop {
+    padding: 7rem 0;
+    position: relative;
+}
+
+.fourQuadArtTop::after {
+    content: '';
+    background: url(../images/image-6.jpg);
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.quadSubtitleTop {
+    width: 30%;
+}
+
+.aboutNewModels {
+    width: 50%;
+    padding-right: 4rem;
+}
+
+/* ------------------ */
+/* BOTTOM */
+/* ------------------ */
+.fourQuadArtBot {
+    padding: 7rem 0;
+    position: relative;
+}
+
+.fourQuadArtBot::before {
+    content: '';
+    background: url(../images/image-7.jpg);
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.quadSubtitleBot {
+    width: 80%;
+}
+
+.floatRight {
+    float: right;
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.quadBtn {
+    margin-top: 1.25rem;
+}
+
+/* ================================================================================================ */
+/* MORE INFO SECTION */
+/* ================================================================================================ */
+.moreInfo {
+    background-image: url(../images/image-8.jpg);
+    background-size: cover;
+}
+
+.moreInfoSec a:visited,
+.moreInfoSec a:link {
+    color: #fff
+}
+
+.moreInfoSec {
+    text-align: center;
+    float: left;
+    width: calc(100% / 3);
+}
+
+.moreInfoSec i {
+    font-size: 2.85rem;
+    color: #cc1d36;
+}
+
+.moreInfoSec a {
+    font-family: 'kanit', 'arial', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.56rem;
+    line-height: 3rem;   
+    text-transform: uppercase; 
+}
+
+.centering {
+    padding: 5rem 0rem;
+}
+
+/* ================================================================================================ */
+/* FOOTER */
+/* ================================================================================================ */
+.footerBG1{
+    padding: 5rem 0rem;
+    background-color: #6c0918;
+    color: #fcfbfb;
+}
+
+.footerH3 {
+    font-family: 'kanit', 'arial', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.ftrSectMainP {
+    font-size: 1rem;
+    font-family: 'roboto', 'arial', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.45rem;
+}
+
+.fslp {
+    padding: .5rem 0;
+}
+
+.footerSectionMid h3 {
+    padding-bottom: 1rem;
+}
+
+.footerSectionLeft,
+.footerSectionMid,
+.footerSectionRight {
+    float: left;    
+}
+
+.footerContactNavGrp {
+    float: right;
+}
+
+.footerSectionLeft {
+    width: 60%;
+}
+
+.footerContactNavGrp {
+    width: 40%;
+}
+
+.footerSectionMid {
+    width: 60%;
+}
+.footerSectionRight {
+    width: 40%;
+}
+
+.footerSectionMid {
+    margin: 0 auto;
+}
+
+form input,
+form button {
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+form input {
+    width: 24rem;
+    padding: 0.5rem 1.75rem;
+}
+
+form button {
+    width: 8rem;
+    font-family: 'kanit', 'arial', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    border: none;
+}
+
+.footerBG2 {
+    background-color: #0b0101;
+}
+
+.copyright {
+    font-family: 'roboto', 'arial', sans-serif;
+    font-size: .9rem;
+    color: #fcfbfb;
+    text-align: center;
+    line-height: 1.45rem;
+    font-style: normal;
+    padding: .5rem 0;
+}
+
+/* ================================================================================================ */
+/* MEDIA QUERIES */
+/* ================================================================================================ */
+
+@media (max-width: 1510px) {
+    .newsHigh {
+        position: static;
+    }
+
+    .btnLinkHighlights {
+        position: static;
+        margin-top: 1rem;
+    }    
+
+    .newsHighImgDiv {
+        width: calc(100% - 50%);
+    }
+
+    .newHiArt {
+        width: calc((100% - 50%) - 2.1rem);
+    }
+
+    .btnLinkHighlights {
+        left: 18rem;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .footerContactNavGrp {
+        float: none;
+    }
+}
+
+@media (max-width: 1185px) {
+    .newsHighImgDiv {
+        width: 100%;
+    }
+
+    .newHiArt {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1130px) {
+    .footerSectionLeft {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .logo,
+    .headerNav,
+    .headerSocIcn,
+    ::after,
+    ::before {
+        display: none;
+    }
+
+    .newsArtDiv:nth-of-type(3) {
+        display: none;
+    }
+
+    .aboutNewModels img {
+        background-image: url(../images/image-6.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+}
