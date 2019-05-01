@@ -144,7 +144,7 @@ img {
 /* NAV HEADER */
 /* ------------------ */
 .headerNav {
-    float:right;
+    float: right;
 }
 
 .hamburger {
@@ -207,7 +207,7 @@ img {
 
 .newsArtDiv {
     float: left;
-    width: calc((100% / 3) - 1.4rem); /* was 2.1rem */    
+    width: calc((100% / 3) - 1.4rem);    
 }
 
 .newsArtDiv:nth-of-type(2) {
@@ -255,13 +255,17 @@ img {
 /* ================================================================================================ */
 
 /* ------------------ */
-/* TOP */
+/* SHARED STYLINGS */
 /* ------------------ */
-.fourQuadArtTop {
+.fourQuadArtTop,
+.fourQuadArtBot {
     padding: 7rem 0;
     position: relative;
 }
 
+/* ------------------ */
+/* TOP */
+/* ------------------ */
 .fourQuadArtTop::after {
     content: '';
     background: url(../images/image-6.jpg);
@@ -285,11 +289,6 @@ img {
 /* ------------------ */
 /* BOTTOM */
 /* ------------------ */
-.fourQuadArtBot {
-    padding: 7rem 0;
-    position: relative;
-}
-
 .fourQuadArtBot::before {
     content: '';
     background: url(../images/image-7.jpg);
@@ -313,6 +312,15 @@ img {
 
 .quadBtn {
     margin-top: 1.25rem;
+}
+
+/* ------------------ */
+/* FOR MEDIA QUERIES */
+/* ------------------ */
+
+.blueStripedWhiteCar,
+.whiteCar {
+    display: none;
 }
 
 /* ================================================================================================ */
@@ -350,6 +358,10 @@ img {
 
 .centering {
     padding: 5rem 0rem;
+}
+
+.iconCommunity {
+    display: none;
 }
 
 /* ================================================================================================ */
@@ -475,17 +487,20 @@ form button {
     .btnLinkHighlights {
         left: 18rem;
     }
-
 }
 
 @media (max-width: 1350px) {
+    .footerSectionLeft {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
     .footerContactNavGrp {
         float: none;
         width: 100%;
-        padding: 0 10rem;
-    }
-
-    
+        padding: 2rem 0;
+    }    
 }
 
 @media (max-width: 1185px) {
@@ -497,6 +512,18 @@ form button {
         width: 100%;
         margin-left: 0;
     }
+
+    .footerInput,
+    .footerBtn {        
+        width: 18rem;
+        text-align: center;
+    }
+
+    .footerBtn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 1130px) {
@@ -506,16 +533,107 @@ form button {
         float: none;
     }
 
-    
+    .ftrSectMainP {
+        font-size: .9rem;
+    }
+
+    .fourQuadArtTop::after,
+    .fourQuadArtBot::before {
+        display: none;
+    }
+
+    .blueStripedWhiteCar,
+    .whiteCar {
+        display: block;
+        width: 100%;
+    }
+
+    .quadSubtitleTop,
+    .aboutNewModels,
+    .floatRight {
+        width: 100%;
+    }
+
+    .aboutNewModels {
+        padding-right: 0;
+    }
+
+    .floatRight {
+        padding-left: 0;
+    }
+
+    .fourQuadArtTop,
+    .fourQuadArtBot {
+        padding: 2.5rem 0;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+    .logo, 
+    .headerNavUl,
+    .headerSocIcn {
+        display: none;
+    }
+
+    h1 {
+        bottom: -3rem;
+        font-size: 3.255rem;
+        line-height: 2.715rem;
+    }
+
+    .hamburger {
+        display: block;   
+        font-size: 1.15rem;
+        width: 2rem;     
+    }
+
+    .footerSectionMid,
+    .footerSectionRight {
+        width: calc(100% / 2);
+        margin: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .h1Span1, 
+    .h1Span2 {
+        line-height: 3rem;
+    }
+    
+    .moreInfoSec {
+        margin: 1.75rem 0;
+    }
+
+    .centering {
+        padding: 1rem 0;
+    }
+
+    .moreInfoSec {
+        float: none;
+        width: 100%;        
+    }
+
+    .iconCommunity {
+        display: inline;
+    }
+
+    .iconJobs {
+        display: none;
+    }
+}
+
+@media (max-width: 415px) {
     .logo,
     .headerNav,
     .headerSocIcn,
     ::after,
     ::before {
         display: none;
+    }
+
+    header {
+        background-image: url(../images/image-1-mobile.jpg);
+        height: 100vh;
     }
 
     .newsArtDiv:nth-of-type(3) {
@@ -527,4 +645,11 @@ form button {
         background-size: cover;
         height: 100vh;
     }
+}
+
+@media (max-width: 320px) {
+    .footerContactNavGrp {
+        padding: 0;
+    }
+
 }
