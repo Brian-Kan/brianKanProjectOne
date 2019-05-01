@@ -68,7 +68,7 @@ article {
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #E40015;
+	background-color: #ba0621;  /* scarlet */
     border: none;
     display: inline-block;
 }
@@ -105,7 +105,7 @@ header {
 }
 
 h1 {
-    color: #cc1d36;
+    color: #cc1d36; /* Lipstick */
     font-size: 5.8rem;
     margin: 0;
     text-transform: uppercase;
@@ -344,7 +344,7 @@ img {
 
 .moreInfoSec i {
     font-size: 2.85rem;
-    color: #cc1d36;
+    color: #cc1d36; /* lipstick */
 }
 
 .moreInfoSec a {
@@ -369,7 +369,7 @@ img {
 /* ================================================================================================ */
 .footerBG1{
     padding: 5rem 0rem;
-    background-color: #6c0918;
+    background-color: #6c0918; /* wine-red */
     color: #fcfbfb;
 }
 
@@ -527,16 +527,6 @@ form button {
 }
 
 @media (max-width: 1130px) {
-    .footerSectionLeft {
-        text-align: center;
-        width: 100%;
-        float: none;
-    }
-
-    .ftrSectMainP {
-        font-size: .9rem;
-    }
-
     .fourQuadArtTop::after,
     .fourQuadArtBot::before {
         display: none;
@@ -566,6 +556,16 @@ form button {
     .fourQuadArtBot {
         padding: 2.5rem 0;
     }
+
+    .footerSectionLeft {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .ftrSectMainP {
+        font-size: .9rem;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -587,6 +587,31 @@ form button {
         width: 2rem;     
     }
 
+    .newsArtDiv {
+        width: 48%;
+    }
+
+    .newsArtDiv:nth-of-type(3) {
+        display: none;
+    }
+
+    .newsArtDiv:nth-of-type(2) {
+        margin: 0;
+        float: right;
+    }
+
+    .newsTitle {
+        margin: 2rem 0;
+    }
+
+    .subtitle {
+        font-size: 1.45rem;
+    }
+
+    .newsHighImgDiv {
+        margin-bottom: 0;
+    }
+
     .footerSectionMid,
     .footerSectionRight {
         width: calc(100% / 2);
@@ -602,6 +627,17 @@ form button {
     
     .moreInfoSec {
         margin: 1.75rem 0;
+    }
+
+    .quadSubtitleTop,
+    .quadSubtitleBot,
+    .articleBodyMQ,
+    .quadBtnMQ {
+        text-align: center;
+    }
+
+    .quadSubtitleBot {
+        width: 100%;
     }
 
     .centering {
@@ -623,28 +659,16 @@ form button {
 }
 
 @media (max-width: 415px) {
-    .logo,
-    .headerNav,
-    .headerSocIcn,
-    ::after,
-    ::before {
-        display: none;
-    }
-
     header {
         background-image: url(../images/image-1-mobile.jpg);
         height: 100vh;
     }
 
-    .newsArtDiv:nth-of-type(3) {
-        display: none;
+    .footerInput, 
+    .footerBtn {
+        width: 99%;
     }
-
-    .aboutNewModels img {
-        background-image: url(../images/image-6.jpg);
-        background-size: cover;
-        height: 100vh;
-    }
+    
 }
 
 @media (max-width: 320px) {
